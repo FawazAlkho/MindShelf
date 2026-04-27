@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindShelf Support</title>
+
+  <style>
+    :root{
+      --bg:#0b130f;
+      --card:#122019;
+      --sage:#a8c2ae;
+      --text:#f6f3ea;
+      --muted:#a3aba5;
+      --line:rgba(255,255,255,.08);
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(168,194,174,.16), transparent 30%),
+        radial-gradient(circle at bottom left, rgba(168,194,174,.08), transparent 28%),
+        var(--bg);
+      color:var(--text);
+      min-height:100vh;
+    }
+
+    .wrap{
+      width:min(920px,92%);
+      margin:auto;
+      padding:48px 0 70px;
+    }
+
+    .brand{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:32px;
+      font-weight:700;
+      margin-bottom:70px;
+      color:var(--text);
+    }
+
+    .eyebrow{
+      font-size:14px;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+      color:var(--muted);
+      margin-bottom:14px;
+      font-weight:700;
+    }
+
+    h1{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(52px,9vw,88px);
+      line-height:.95;
+      margin-bottom:20px;
+    }
+
+    .sub{
+      color:var(--muted);
+      font-size:20px;
+      max-width:620px;
+      line-height:1.6;
+      margin-bottom:38px;
+    }
+
+    .card{
+      background:rgba(18,32,25,.88);
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:34px;
+      backdrop-filter:blur(14px);
+      box-shadow:0 20px 50px rgba(0,0,0,.22);
+    }
+
+    .section{
+      padding:26px 0;
+      border-bottom:1px solid var(--line);
+    }
+
+    .section:last-child{
+      border-bottom:none;
+      padding-bottom:0;
+    }
+
+    h2{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:30px;
+      margin-bottom:12px;
+    }
+
+    p, li{
+      color:var(--muted);
+      font-size:17px;
+      line-height:1.7;
+    }
+
+    ul{
+      padding-left:20px;
+      margin-top:10px;
+    }
+
+    a{
+      color:var(--sage);
+      text-decoration:none;
+      font-weight:700;
+    }
+
+    .pill{
+      display:inline-block;
+      margin-top:18px;
+      padding:11px 18px;
+      border-radius:999px;
+      background:rgba(168,194,174,.14);
+      color:var(--sage);
+      font-weight:700;
+      font-size:14px;
+    }
+
+    footer{
+      margin-top:28px;
+      text-align:center;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    @media (max-width:600px){
+      .wrap{
+        padding:32px 0 50px;
+      }
+
+      .brand{
+        margin-bottom:44px;
+        font-size:28px;
+      }
+
+      .card{
+        padding:24px;
+        border-radius:22px;
+      }
+
+      h2{
+        font-size:24px;
+      }
+
+      .sub{
+        font-size:18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="brand">MindShelf</div>
+
+    <div class="eyebrow">Support</div>
+
+    <h1>We’re here to help.</h1>
+
+    <p class="sub">
+      Need help with MindShelf? Whether it’s login issues, syncing, bugs, or feedback,
+      reach out and we’ll do our best to help quickly.
+    </p>
+
+    <div class="card">
+
+      <div class="section">
+        <h2>Contact Support</h2>
+        <p>
+          Email us anytime at:<br><br>
+          <a href="mailto:alkhodierf@gmail.com">alkhodierf@gmail.com</a>
+        </p>
+        <span class="pill">Usually replies within 48 hours</span>
+      </div>
+
+      <div class="section">
+        <h2>Common Help Topics</h2>
+        <ul>
+          <li>Account sign in or Apple login issues</li>
+          <li>Books not syncing correctly</li>
+          <li>Lost notes or data questions</li>
+          <li>Bug reports or crashes</li>
+          <li>Feature requests and suggestions</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>When Contacting Us</h2>
+        <p>
+          Please include your device model, iOS version, and a short description
+          of the issue so we can help faster.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Feedback</h2>
+        <p>
+          MindShelf is constantly improving. If you have ideas that would make the app
+          better, we’d love to hear them.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Thank You</h2>
+        <p>
+          Thank you for using MindShelf and building your personal library of ideas.
+        </p>
+      </div>
+
+    </div>
+
+    <footer>© 2026 MindShelf. All rights reserved.</footer>
+
+  </div>
+</body>
+</html>
